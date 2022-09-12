@@ -6,5 +6,5 @@ tasks:
     register: result
 
   - name: prints the uptime of the system
-    debug: {{ result }}
+    debug: "{{ result }}"
 
