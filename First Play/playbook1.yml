@@ -1,10 +1,10 @@
-name: Testing Ansible
-hosts: all
-tasks:
-  - name: Get uptime
-    shell: /usr/bin/uptime
-    register: result
+- name: Testing Ansible
+  hosts: all
+  tasks:
+    - name: Get uptime
+      shell: /usr/bin/uptime
+      register: result
 
-  - name: prints the uptime of the system
-    debug: "{{ result }}"
+    - name: prints the uptime of the system
+      debug: "{{ result }}"
 
