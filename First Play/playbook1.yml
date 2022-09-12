@@ -1,10 +1,11 @@
 - name: Testing Ansible
   hosts: localhost
+  gather_facts: no
   tasks:
     - name: Get uptime
       shell: /usr/bin/uptime
       register: result
 
     - name: prints the uptime of the system
-      debug: "{{ result }}"
-
+      debug:
+        var: result
