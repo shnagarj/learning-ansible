@@ -1,5 +1,5 @@
 - name: Testing Ansible
-  hosts: all
+  hosts: localhost
   tasks:
     - name: Get uptime
       shell: /usr/bin/uptime
